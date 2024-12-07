@@ -1,0 +1,812 @@
+*{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main-nav{
+    background-color: #000;
+    height: 4rem;
+     
+    
+    flex: 1;
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.main-nav img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem 0 1rem 1rem;
+    align-self: center;
+}
+.main-nav i{
+    color: rgb(250, 250, 250);
+    height: 4rem;
+    font-size: 30px;
+    padding: 0rem 1rem 0rem 1rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    opacity: 0.7;
+}
+i:hover{
+    opacity: 1;
+}
+.main-nav #search{
+    background-color: rgb(46, 45, 45);
+    height: 3rem;
+    width: 30rem;
+    font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 750;
+     font-style: normal;
+    border: none;
+    border-radius: 7rem;
+    align-self: center;
+}
+#search-icon{
+    padding-top: 0rem;
+}
+
+
+.search-bar{
+    display: flex;
+    grid-column: 2 / 4;
+    
+}
+.main-nav .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.main-nav .user .btn1 {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    height: 2.5em;
+    width: 6rem;
+    border: none;
+    border-radius: 3rem;
+    margin-left: 1rem;
+
+}
+.main-nav .user #btn2{
+    color: white;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    height: 2rem;
+    width: 9rem;
+    border: none;
+    opacity: 0.7;
+
+    align-items: center;
+    
+}
+.user .btn1:hover{
+    box-shadow: rgba(2, 118, 251, 1) 0px 0px 0px 2px;
+    
+}
+.user #btn2 i{
+    padding-right: 0.3rem;
+}
+.user #btn2:hover{
+    opacity: 1;
+    box-shadow: none;
+}
+
+.main{
+    display: flex;
+
+}
+.sidebar{
+    background-color: rgb(15, 13, 13);
+    width: 17.8rem;
+    height: 80vh;
+    border-radius: 1rem;
+    margin: 0.3rem 0.3rem 0 0.3rem;
+}
+.sidebar .lib-nav{
+    background-color: rgb(15, 13, 13);
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    align-items: center;
+    justify-content: center;
+}
+img,i,p{
+    cursor: pointer;
+}
+.sidebar .lib-nav img{
+    background-color: rgb(15, 13, 13);
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+.sidebar .lib-nav p{
+    background-color: rgb(15, 13, 13);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;  
+    color: white;
+    padding-top: 1rem;
+    grid-column: 2 / 4;
+    
+    opacity: 0.7;
+
+}
+.sidebar .lib-nav i{
+    background-color: rgb(15, 13, 13);
+    color: white;
+    font-size: 1.5rem;
+    grid-column: 5 / 6;
+    margin: 1rem 1rem 0  0;
+    align-self: center;
+    justify-self: end;
+    opacity: 0.7;
+
+}
+.sidebar .lib-nav img:hover{
+    opacity: 1;
+}
+.sidebar .lib-nav i:hover{
+    opacity: 1;
+}
+
+
+.sidebar .lib-nav p:hover{
+    opacity: 1;
+}
+.sidebar .lib-contant {
+    background-color: rgb(15, 13, 13);
+    height: 16rem;
+    width: 17rem;
+    box-shadow: 0.9rem rgb(0, 0, 0);
+    margin: 1.3rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.2rem;
+    overflow-y:auto;
+}
+.sidebar .lib-contant .playlist{
+    background-color: rgb(62, 58, 58);
+    border-radius: 1rem;
+    height: 10.9rem;
+    width: 15.5rem ;
+    margin-top: 0.5rem;
+    padding: 0.1rem;
+
+}
+.playlist .title{
+    color: #fff;
+    background-color: rgb(62, 58, 58);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    margin: 1rem 1rem 0 1rem;
+    padding: 1rem;
+}
+.playlist .tips{
+    color: #fff;
+    background-color: rgb(62, 58, 58);
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 0.5rem 0.5rem 1rem ;
+    padding: 0.5rem;
+    opacity: 0.7;
+}
+.playlist button{
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    height: 2.5em;
+    width: 7rem;
+    border: none;
+    border-radius: 3rem;
+    margin-left: 7rem;
+
+}
+.sidebar .lib-contant .podcast{
+    background-color: rgb(62, 58, 58);
+    border-radius: 1rem;
+    height: 12rem;
+    width: 15.5rem ;
+    margin-top: 0.5rem;
+    padding: 0.1rem;
+
+}
+.podcast .title{
+    color: #fff;
+    background-color: rgb(62, 58, 58);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    margin: 0.4rem 1rem 0 1rem;
+    padding: 1rem;
+}
+.podcast .tips{
+    color: #fff;
+    background-color: rgb(62, 58, 58);
+    font-family: "Montserrat", sans-serif;
+    margin: 0.5rem 0.5rem 0.5rem 1rem ;
+    padding: 0.5rem;
+    opacity: 0.7;
+}
+.podcast button{
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    height: 2.5em;
+    width: 9rem;
+    border: none;
+    border-radius: 3rem;
+    margin-left: 5rem;
+
+}
+.info{
+    background-color: rgb(15, 13, 13);
+    margin: 1.5rem 0.3rem 0.3rem 0.3rem;
+    padding: 0.3rem;
+}
+.sidebar  .info a{
+    background-color: rgb(15, 13, 13);
+    color: rgb(97, 96, 96);
+    font-family: "Montserrat", sans-serif;
+    font-size:0.8rem;
+    text-decoration: none;
+    line-height: 3rem;
+    margin: 12px;
+}
+.sidebar .info .lg-btn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: rgb(15, 13, 13);
+    color: white;
+    height: 2rem;
+    width: 7rem;
+    border: none;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(250, 250, 250) 0px 0px 0px 1px;
+    margin: 2rem 0.3rem 0.3rem 0.3rem;
+}
+.sidebar .info .lg-btn span{
+    background-color: transparent;
+    position: relative;
+    bottom: 17px;
+    font-weight: 700;
+}
+.sidebar .info .lg-btn i{
+    position: relative;
+    bottom:3px ;
+}
+
+.sidebar .info .lg-btn:hover{
+    box-shadow: rgba(2, 118, 251, 1) 0px 0px 0px 1px;
+
+}
+button:hover{
+    box-shadow: rgb(250, 250, 250) 0px 0px 0px 3px;
+}
+
+
+.main-contant{
+    background-color:rgb(15, 13, 13);
+    flex: 2;
+    border-radius: 1rem;
+    height: 80vh;
+    margin: 0.3rem 0.3rem 0 0.07rem;
+    overflow: auto;
+}
+.main-contant .artist{
+    background-color: rgb(15, 13, 13);
+}
+.main-contant .artist .heading{
+    background-color: rgb(15, 13, 13);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-contant .artist .heading a{
+    background-color: transparent;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 1rem;
+    text-decoration: none;
+}
+.main-contant .artist .heading span{
+    background-color: transparent;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.5rem;
+    position: relative;
+    top: 1rem;
+    opacity: 0.7;
+}
+.artist .contant {
+    background-color: rgb(15, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.artist .contant .card{
+    background-color: rgb(27, 24, 24, 0.5);
+    height: 14rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.artist .contant .card:hover{
+    background-color: rgb(27, 24, 24, 1);
+    cursor: pointer;
+}
+
+.artist .contant .card img{
+    height: 9rem;
+    width: 9rem;
+    margin: 0.5rem;
+    border-radius: 5rem;
+
+}
+.artist .contant .card p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550 ;
+    font-style: normal;
+    margin-left: 1rem;
+}
+.artist .contant .card span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 450 ;
+    font-style: normal;
+    opacity: 0.7;
+
+}
+
+.main-contant .music{
+    background-color: rgb(15, 13, 13);
+}
+.main-contant .music .heading{
+    background-color: rgb(15, 13, 13);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main-contant .music .heading a{
+    background-color: transparent;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 1rem;
+    text-decoration: none;
+}
+.main-contant .music .heading span{
+    background-color:  transparent;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.5rem;
+    position: relative;
+    top: 1rem;
+    opacity: 0.7;
+}
+.music .contant {
+    background-color: rgb(15, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.music .contant .card{
+    background-color: rgb(27, 24, 24, 0.5);
+    height: 14rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.music .contant .card:hover{
+    background-color: rgb(27, 24, 24, 1);
+    cursor: pointer;
+}
+
+.music .contant .card img{
+    height: 9rem;
+    width: 9rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+
+}
+.music .contant .card p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550 ;
+    font-style: normal;
+    margin-left: 1rem;
+}
+.music .contant .card span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 450 ;
+    font-style: normal;
+    opacity: 0.7;
+
+}
+.main .main-contant .footer{
+    background-color:rgb(15, 13, 13);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+    margin-top: 5rem;
+}
+.footer .compny{
+    background-color: transparent;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+}
+.footer .compny p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    font-style: normal;
+    margin: 0.5rem 0.5rem 0.3rem 0.5rem ;
+    padding: 0.5rem 0.5rem  0 0.5rem ;
+    grid-column: 1 / 3;
+}
+.footer .compny .tags{
+    background-color: transparent;
+    grid-column: 1/ 3;
+    grid-row: 2/ 4;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer .compny span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    line-height: 2rem;
+    font-style: normal;
+    display: block;
+    grid-column: 1 / 4;
+    opacity: 0.6;
+
+}
+
+.footer .community{
+    background-color: transparent;
+    grid-column: 3/ 5;
+    grid-row: 1 / 4;
+}
+.footer .community p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    font-style: normal;
+    margin: 0.5rem 0.5rem 0.3rem 0.5rem ;
+    padding: 0.5rem 0.5rem  0 0.5rem ;
+    grid-column: 1 / 3;
+}
+.footer .community .tags{
+    background-color: transparent;
+    grid-column: 1 / 3;
+    grid-row: 2/ 4;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer .community span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    line-height: 2rem;
+    font-style: normal;
+    display: block;
+    grid-column: 1 / 4;
+    opacity: 0.6;
+
+}
+.footer .link{
+    background-color: transparent;
+    grid-column: 5 / 7;
+    grid-row: 1 / 4;
+}
+.footer .link p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    font-style: normal;
+    margin: 0.5rem 0.5rem 0.3rem 0.5rem ;
+    padding: 0.5rem 0.5rem  0 0.5rem ;
+    grid-column: 1 / 3;
+}
+.footer .link .tags{
+    background-color: transparent;
+    grid-column: 1/ 3;
+    grid-row: 2/ 4;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer .link span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    line-height: 2rem;
+    font-style: normal;
+    display: block;
+    grid-column: 1 / 4;
+    opacity: 0.6;
+
+}
+.footer .plans{
+    background-color: transparent;
+    grid-column: 7 / 9;
+    grid-row: 1 / 4;
+}
+.footer .plans p{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    font-style: normal;
+    margin: 0.5rem 0.5rem 0.3rem 0.5rem ;
+    padding: 0.5rem 0.5rem  0 0.5rem ;
+    grid-column: 1 / 3;
+}
+.footer .plans .tags{
+    background-color: transparent;
+    grid-column: 1/ 3;
+    grid-row: 2/ 4;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer .plans span{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    line-height: 2rem;
+    font-style: normal;
+    display: block;
+    grid-column: 1 / 4;
+    opacity: 0.6;
+}
+.footer .social, i{
+
+    background-color: transparent;
+    font-size: 1.5rem;
+    grid-column: 9 /13;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.footer .social i{
+    color: #fff;
+    background-color: rgb(32, 30, 30);
+    border-radius: 3rem;
+    opacity: 0.8;
+}
+.footer .social i:hover{
+    background-color: rgb(46, 45, 45);
+    opacity: 1;
+}
+
+.foot-line{
+    background-color: transparent;
+    color:rgb(15, 13, 13);
+    border-top: 0.05rem solid white;
+    height: 1rem;
+     margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    opacity: 0.7;
+}
+.main-contant .credits{
+    background-color: transparent;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight:500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+   
+    opacity: 0.6;
+    height: 12rem;
+    cursor: pointer;
+}
+.main-contant .credits i{
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+
+
+
+
+
+.player{
+    background-color: #000;
+    height: 4.7rem;
+  width: 100%;
+  display:flex;
+    width: 210vh;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    left: 0rem;
+    display: flex;
+    align-items: center;
+  
+  }
+  .player img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border: 1px solid white;
+  }
+  .player p,span{
+    background-color: transparent;
+    color: white;
+    margin: 0.6rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .player p{
+    background-color: #000;
+    font-weight: 900;
+  }
+  .player span{
+    background-color: #000;
+    font-size: 0.7rem;
+    opacity: 0.5;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+  }
+  .player .play-control{
+    position: relative;
+
+    left: 22%;
+  }
+  .player .play-control img{
+    border: none;
+    height: 1.3rem;
+    width: 1.3rem;
+    align-items: center;
+    opacity: 0.5;
+  }
+  .player .play-control img:hover{
+    opacity: 1;
+  }
+   
+
+  @media screen and (max-width = 700px) {
+    #sidebar{
+        display: none;
+    }
+    #card2artist{
+        display: none;
+    }
+    
+  }
+
+
+  @media  (max-width:700px){   
+    #sidebar{
+        display: none;
+    }
+    .footer .community{
+        display: none;
+    }
+    .footer .compny{
+        grid-column: 1 / 4;
+    }
+    .footer .link{
+        grid-column:4/7 ;
+    }
+    .footer .plans{
+        grid-column: 7 / 11;
+    }
+    .footer .social{
+        width: 10rem;
+    }
+  }
+
+  @media (max-width: 1030px ) {
+    #card5artist{
+        display: none;
+    }
+    #card4artist{
+        display: none;
+    }
+    #card5rec{
+        display: none;
+    }
+    #card4rec{
+        display: none;
+    }
+    #card5chart{
+        display: none;
+    }
+    #card4chart{
+        display: none;
+    }
+    .main-nav .user #btn2{
+        display: none;
+    }
+  }
+  @media (max-width: 1275px ) {
+    #card5artist{
+        display: none;
+    }
+    #card5rec{
+        display: none;
+    }
+    #card5chart{
+        display: none;}
+    
+  }
+  

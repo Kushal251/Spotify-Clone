@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web player - Music For You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clon.css">
+</head>
+<body>
+    <div class="main-nav">
+        <img src="logo.png" alt="#">
+        
+        <div class="search-bar">
+        <i class="fa-solid fa-house home"></i>
+        <label for="search"><i class="fa-solid fa-magnifying-glass ," id="search-icon"></i></label>
+        <input type="text" id="search" placeholder="&nbsp;&nbsp;&nbsp;What Do You Want To Play?">
+        </div>
+        <div class="user">
+            <button class="btn1">EXPLORE</button>
+            <Button id="btn2"><i class="fa-regular fa-circle-down"></i>install app</Button>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </div>
+    <div class="main">
+    <div class="sidebar" id="sidebar">
+        <div class="lib-nav">
+        <img src="library_icon.png" alt="#">
+        <p>Your Library </p>
+        <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="lib-contant">
+            <div class="playlist">
+                <p class="title">Create your first playlist </p>
+                <p class="tips">its easy, we will help you</p>
+                <button >Create playlist</button>
+            </div>
+            <div class="podcast">
+                <p class="title">Let's find some podcasts to follow </p>
+                <p class="tips">We'll keep you updated on new episodes</p>
+                <button >Browse podcast</button>
+            </div>
+        </div>
+        <div class="info">
+           <a href="#">legal</a>
+           <a href="#">Sefty&amp;PrivacyCenter</a>
+           <a href="#">PrivacyPolicy</a> 
+           <a href="#">Cookies</a>
+           <a href="#">AboutAds </a>
+           <a href="#">Accessibility <br>
+           </a>
+           <button class="lg-btn"><i class="fa-solid fa-globe"></i><span>English</span></button>
+        </div>
+    </div>
+     <div class="main-contant">
+        <div class="artist">
+            <div class="heading">
+            <a href="#">Populer artist</a>
+            <span>Show all</span>
+            </div>
+            <div class="contant" id="card1artist">
+                <div class="card">
+                    <img src="pritam.jpg"  class="pritam">
+                    <p class="name">Pritam</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist</span>
+
+                </div>
+                <div class="card" id="card2artist">
+                    <img src="sachin-jigar.jpg"  class="sachin-jagar">
+                    <p class="name">Sachin-Jigar</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist</span>
+
+                </div>
+                <div class="card" id="card3artist">
+                    <img src="arjit.jpg" alt="#">
+                    <p class="name">Arjit Singh</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist</span>
+
+                </div>
+                <div class="card" id="card4artist"> 
+                    <img src="ar-rahman.webp" alt="#">
+                    <p class="name">AR-Rahman</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist</span>
+
+                </div>
+                <div class="card" id="card5artist"> 
+                    <img src="badshah.webp" alt="#">
+                    <p class="name">Badshah</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist</span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="music">
+            <div class="heading">
+            <a href="#">Recommendation</a>
+            <span>Show all</span>
+            </div>
+
+            <div class="contant">
+                <div class="card" id="card1rec">
+                    <img src="card2img.jpeg" alt="#">
+                    <p class="name">mahiye jinna sohna</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spotify</span>
+
+                </div>
+                <div class="card"id="card2rec">
+                    <img src="card3img.jpeg" alt="#">
+                    <p class="name">Mere paas tum ho</p>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spotify</span>
+
+                </div>
+                <div class="card"  id="card3rec">
+                    <img src="card4img.jpeg" alt="#">
+                    <p class="name">NAA Ready</p>
+                    <span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spotify</span>
+
+                </div>
+                <div class="card" id="card4rec"> 
+                    <img src="card11.jpg" alt="#">
+                    <p class="name">Raah Wargah</p>
+                    <span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spotify</span>
+
+                </div>
+                <div class="card" id="card5rec" > 
+                    <img src="card12.jpg" alt="#">
+                    <p class="name">Easy on me</p>
+                    <span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spotify</span>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="music">
+            <div class="heading">
+            <a href="#">Featured Charts</a>
+            <span>Show all</span>
+            </div>
+
+            <div class="contant">
+                <div class="card" id="card1chart">
+                    <img src="card5img.jpeg" alt="#">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your week update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the most played...</span>
+
+                </div>
+                <div class="card" id="card2chart">
+                    <img src="card1img.jpeg" alt="#">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your week update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the most played...</span>
+
+
+                </div>
+                <div class="card"  id="card3chart">
+                    <img src="card6img.jpeg" alt="#">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your week update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the most played...</span>
+
+
+                </div>
+                <div class="card"id="card4chart" >
+                    <img src="card13.jpg" alt="#">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your week update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the most played...</span>
+
+
+                </div>
+                <div class="card" id="card5chart" >
+                    <img src="card14.jpg" alt="#">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your week update &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the most played...</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="compny">
+                <p>Company</p>
+                <div class="tags">
+                <span>About</span>
+                <span>Jobs</span>
+                <span>FOR YOUR RECORDS</span>
+                </div>
+            </div>
+            <div class="community">
+                <p>Communities</p>
+                <div class="tags">
+                <span>For Artist</span>
+                <span>Devlopers</span>
+                <span>Advertiesing</span>
+                <span>investor</span>
+                <span>vendors</span>
+                </div>
+            </div>
+            <div class="link">
+                <p>Uesful Link</p>
+                <div class="tags">
+                <span>Support</span>
+                <span>Mobile App</span>
+                </div>
+            </div>
+            <div class="plans">
+                <p>Spotify plans</p>
+                <div class="tags">
+                <span>Primium</span>
+                <span>Primium Family</span>
+                <span>Primium Student</span>
+                <span>Spotify free</span>
+                </div>
+            </div>
+            <div class="social">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="foot-line"></div>
+        <div class="credits"><i class="fa-regular fa-copyright"></i> 2024 Spotify</div>
+   </div>
+        <!-- <div class="side">side</div>  -->
+</div>
+<div class="player">
+    <img src="card4img.jpeg" >
+    <p>NAA Ready <br><span>South Indian Song</span></p>
+    <div class="play-control">
+        <img src="player_icon5.png" class="play1" >
+        <img src="player_icon2.png"  class="2">
+        <img src="player_icon3.png" class="pause">
+        <img src="player_icon4.png" class="3" >
+        <img src="player_icon1.png"  class="play4">
+    </div>
+</div>
+
+</body>
+</html>
